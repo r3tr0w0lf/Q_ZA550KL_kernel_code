@@ -1,0 +1,11 @@
+#
+# MASTAR Touchscreen driver configuration
+#
+
+# zhaopengfei@wind-mobi.com 20180713 begin
+
+config TOUCHSCREEN_MSG2836
+        tristate "MSG2836 chipset touchscreen"
+		depends on I2C
+		help
+		This enables support for MSG2836 CHIPSET over I2C based touchscreens.

@@ -1,0 +1,24 @@
+#
+# For a description of the syntax of this configuration file,
+# see Documentation/kbuild/kconfig-language.txt.
+#
+mainmenu "Linux/$ARCH $KERNELVERSION Kernel Configuration"
+
+config SRCARCH
+	string
+	option env="SRCARCH"
+
+source "arch/$SRCARCH/Kconfig"
+
+#liqiang@wind-mobi.com 20180207 begin
+config WIND_PRO_A306
+	bool "CONFIG_WIND_PRO_A306"
+	default n
+	help
+		Select y or n
+config WIND_PRO_E300LWW
+	bool "CONFIG_WIND_PRO_E300LWW"
+	default n
+	help
+		Select y or n
+#liqiang@wind-mobi.com 20180207 end
